@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="helloWorld" class="com.msj.demo09.HelloWorld">
+        <!--调用HelloWorld里面的setter方法，name里面的值对应的setHello去掉set，再将Hello首字母小写-->
+        <property name="hello">
+            <!--注入内部的bean-->
+            <bean id="hello" class="com.msj.demo09.Hello"></bean>
+        </property>
+    </bean>
+</beans>
