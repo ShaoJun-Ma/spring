@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="collection" class="com.msj.demo10.User">
+        <!--list-->
+        <property name="userList">
+            <list>
+                <value>小红</value>
+                <value>小白</value>
+                <value>小兰</value>
+            </list>
+        </property>
+
+        <!--set-->
+        <property name="userSet">
+            <set>
+                <value>小红</value>
+                <value>小白</value>
+                <value>小兰</value>
+            </set>
+        </property>
+
+        <!--Map-->
+        <property name="userMap">
+            <map>
+                <entry key="1" value="小红"></entry>
+                <entry key="2" value="小白"></entry>
+                <entry key="3" value="小兰"></entry>
+            </map>
+        </property>
+
+        <!--Properties-->
+        <property name="userPro">
+            <props>
+                <prop key="1">小红</prop>
+                <prop key="2">小白</prop>
+                <prop key="3">小兰</prop>
+            </props>
+        </property>
+    </bean>
+</beans>
