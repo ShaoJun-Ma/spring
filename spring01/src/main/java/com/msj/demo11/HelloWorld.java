@@ -1,5 +1,7 @@
 package com.msj.demo11;
 
+import javax.annotation.Resource;
+
 public class HelloWorld {
     private Hello hello;
     private String name;
@@ -8,6 +10,7 @@ public class HelloWorld {
         return hello;
     }
 
+    @Resource(name="hello")
     public void setHello(Hello hello) {
         this.hello = hello;
     }

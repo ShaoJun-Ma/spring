@@ -9,6 +9,4 @@ public class MainApp {
         HelloWorld helloWorld = (HelloWorld) context.getBean("helloWorld");
         helloWorld.test();
     }
-
-
 }
