@@ -1,5 +1,8 @@
 package com.msj.demo05;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 public class HelloWorld {
     private String message;
 
@@ -11,9 +14,12 @@ public class HelloWorld {
         this.message = message;
     }
 
+    @PostConstruct
     public void init(){
         System.out.println("bean定义");
     }
+
+    @PreDestroy
     public void destroy(){
         System.out.println("bean销毁");
     }
